@@ -53,7 +53,7 @@ body {
         height: 78px;
         width: 78px;
         border-radius: 50%;
-        border: 3px solid #ffffff;
+        border: 3px solid $white;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -79,7 +79,7 @@ body {
         font-weight: 300;
         font-size: 40px;
         line-height: 47px;
-        color: #ffffff;
+        color: $white;
         z-index: 1;
         margin-bottom: 106px;
       }
@@ -99,7 +99,7 @@ body {
           line-height: 21px;
           color: #7078c9;
           &.active {
-            color: #ffffff;
+            color: $white;
           }
         }
       }
@@ -128,23 +128,23 @@ body {
         &.Light-red {
           background: $Light-red;
         }
-        &.Soft-blue{
+        &.Soft-blue {
           background: $Soft-blue;
         }
-        &.Lime-green{
+        &.Lime-green {
           background: $Lime-green;
         }
-        &.Violet{
+        &.Violet {
           background: $Violet;
         }
-        &.Soft-orange{
+        &.Soft-orange {
           background: $Soft-orange;
         }
       }
       .grid__item-container-bottom {
         background: #1c204b;
         border-radius: 15px;
-        width: 255px;
+        width: 100%;
         height: 154px;
         z-index: 10;
         display: flex;
@@ -152,6 +152,45 @@ body {
         justify-content: center;
         position: absolute;
         top: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 29px 30px 30px 32px;
+
+        .grid__item-top {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          margin-bottom: 24px;
+          .grid__item-top__header {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            color: $white;
+          }
+        }
+        .grid__item-header {
+          text-align: start;
+          display: flex;
+          align-items: flex-start;
+          width: 100%;
+          font-weight: 300;
+          font-size: 56px;
+          line-height: 66px;
+          color: $white;
+        }
+        .grid__item-bottom {
+          text-align: start;
+          display: flex;
+          align-items: flex-start;
+          width: 100%;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 18px;
+          color: #bbc0ff;
+        }
       }
     }
   }
